@@ -4684,7 +4684,7 @@ p, span, li {
     display: none;
   }
   .banner-section .overlay {
-    background-image: url(../images/banner-bg.png)!important;
+  background-image: url(../images/banner-bg.png)!important;
   }
   .business-loan-section.personal-loan .main-content {
     padding: 60px 80px;
