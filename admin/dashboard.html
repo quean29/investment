@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
   <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
   <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
-  <link rel="icon" type="image/png" href="../assetss/images/logo.png" />
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
 
   <!-- Core CSS -->
   <link rel="stylesheet" href="../assets/vendor/css/rtl/core-dark.css" class="template-customizer-core-css" />
@@ -209,10 +209,10 @@
                 <div class="card">
                   <div class="card-body text-center">
                     <div class="avatar avatar-md mx-auto mb-3">
-                      <span class="avatar-initial rounded-circle bg-label-info"><i class="bx bx-dollar fs-3"></i></span>
+                      <span class="avatar-initial rounded-circle bg-label-info"><i class="bx bx-euro fs-3"></i></span>
                     </div>
-                    <P>Total Users Wallet Balance</P>
-                    <a href="javascript:void(0)" class="btn btn-primary">41,230</a>
+                    <P>Total Money Deposited</P>
+                    <a href="javascript:void(0)" class="btn btn-primary">&#8358;41,230</a>
                   </div>
                 </div>
               </div>
@@ -223,13 +223,15 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 m-auto">
                   <table class="table table-bordered table-hovered table-striped" id="productTable" style="margin-top: 1rem;">
                     <thead>
-                      <th> Username </th>
+                      <th> Fullname </th>
                       <th> Email </th>
                       <th> Phone </th>
-                      <th> Wallet </th>
+                      <th> Balance </th>
+                      <th>Active Plan</th>
                       <th> Date joined </th>
+                      <th> Status </th>
                       <th> Action </th>
-                      <th> Privilegde </th>
+                      <th></th>
                     </thead>
 
                     <tbody>
@@ -239,14 +241,13 @@
                           <td> Hello </td>
                           <td> 09087657890 </td>
                           <td> 3,000 </td>
+                          <td>None</td>
                           <td> 11-12-2022 </td>
-                          <td> 
-                            <a href="fund.php?id='.$user['id'].'" class="btn btn-info">Unblock</a> 
-                          </td>
+                          <td><p class="success">Active</p></td>
                           <td> 
                             <a href="fund.php?id='.$user['id'].'" class="btn btn-info">Edit</a> 
-                            <a href="fund.php?id='.$user['id'].'" class="btn btn-danger">Delete</a> 
                           </td>
+                          <td><a href="fund.php?id='.$user['id'].'" class="btn btn-info">View</a></td>
                         </tr>
 
                         <tr>
