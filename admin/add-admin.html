@@ -74,16 +74,16 @@
         <div class="menu-inner-shadow"></div> 
         <ul class="menu-inner py-1">
           <!-- Dashboard -->
-          <li class="menu-item active">
+          <li class="menu-item">
             <a href="dashboard.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Dashboard">Dashboard</div>
             </a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item active">
             <a href="admin.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-user"></i>
-              <div data-i18n="Admins">Admins</div>
+              <div data-i18n="Admin">Admins</div>
             </a>
           </li>
           <!-- Transactions -->
@@ -199,85 +199,34 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
 
-              <div class="col-md-4 col-sm-4 col-6 mb-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="avatar avatar-md mx-auto mb-3">
-                      <span class="avatar-initial rounded-circle bg-label-info"><i class="bx bx-user fs-3"></i></span>
-                    </div>
-                    <p>Total Users</p>
-                    <a href="javascript:void(0)" class="btn btn-primary">30</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-4 col-6 mb-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="avatar avatar-md mx-auto mb-3">
-                      <span class="avatar-initial rounded-circle bg-label-info"><i class="bx bx-dollar fs-3"></i></span>
-                    </div>
-                    <P>Total Users Wallet Balance</P>
-                    <a href="javascript:void(0)" class="btn btn-primary">41,230</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-4 col-6 mb-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="avatar avatar-md mx-auto mb-3">
-                      <span class="avatar-initial rounded-circle bg-label-info"><i class="bx bx-user fs-3"></i></span>
-                    </div>
-                    <p>Total Admin</p>
-                    <a href="javascript:void(0)" class="btn btn-primary">30</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="container mt-5">
               <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-12 m-auto">
-                  <table class="table table-bordered table-hovered table-striped" id="productTable" style="margin-top: 1rem;">
-                    <thead>
-                      <th> Username </th>
-                      <th> Email </th>
-                      <th> Phone </th>
-                      <th> Wallet </th>
-                      <th> Date joined </th>
-                      <th> Privilegde </th>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                          <td> Hello </td>
-                          <td> Hello </td>
-                          <td> 09087657890 </td>
-                          <td> 3,000 </td>
-                          <td> 11-12-2022 </td>
-                          <td> 
-                            <a href="view.html" class="btn btn-info">View User</a>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td> Hello </td>
-                          <td> Hello </td>
-                          <td> 09087657890 </td>
-                          <td> 3,000 </td>
-                          <td> 11-12-2022 </td>
-                          <td> 
-                            <a href="view.html" class="btn btn-info">View User</a>
-                          </td>
-                        </tr>
-
-                    </tbody>	
-                  </table>
+                <div class="col-md-4 col-sm-4 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <form class="mb-3" action="" method="POST">
+                        <!-- Error -->
+                                              <!-- /Error -->
+                        <div class="mb-3">
+                                                  <input type="text" class="form-control" name="username" value="Isaac" required="" readonly="">
+                        </div>
+                        <div class="mb-3" style="text-align: left;">
+                          <label for="old_balanace" class="form-label">Current </label>
+                          <input type="text" class="form-control" name="wallet_1" value="4800" required="" readonly="">
+                        </div>
+                        <div class="mb-3" style="text-align: left;">
+                          <label for="new_balanace" class="form-label">New</label>
+                          <input type="text" class="form-control" name="wallet" required="">
+                        </div>
+                        <input type="hidden" name="user" value="1">
+                        <div class="mb-3">
+                          <button class="btn btn-info d-grid w-100" type="submit" name="fund"> Add Admin</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
 
           </div>
